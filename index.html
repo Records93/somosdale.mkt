@@ -2,12 +2,15 @@
 <html lang="es"
 <head>
     <img src=DALEMKT1.png alt=DALEMKT1.png>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Integrales para Negocios Online</title>
     <style>
         body {
-            font-family: Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #000;
@@ -43,6 +46,16 @@
         .service {
             margin: 20px 0;
         }
+        .service-title {
+            cursor: pointer;
+            color: #9B9B9B; /* Color actualizado */
+            margin: 10px 0;
+            font-family: Helvetica, Arial, sans-serif; /* Fuente actualizada */
+        }
+        .service-description {
+            display: none;
+            margin-bottom: 10px;
+        }
         .cta-button {
             background-color: #e91e63;
             color: #fff;
@@ -52,6 +65,14 @@
             border-radius: 5px;
             margin-top: 20px;
             display: inline-block;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .service-column {
+            flex-basis: 23%; /* Ajustar el ancho de las columnas según sea necesario */
         }
     </style>
 </head>
@@ -67,16 +88,16 @@
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
             <div class="service">
-                <h3>Community Manager</h3>
-                <p>Gestión de redes sociales para aumentar la presencia y el engagement de tu marca.</p>
+                <h3 class="service-title">Branding</h3>
+                <p class="service-description">Mejora la percepción de tu marca y destaca frente a la competencia.</p>
             </div>
             <div class="service">
-                <h3>Campañas Publicitarias</h3>
-                <p>Creación y gestión de campañas publicitarias efectivas para alcanzar a tu público objetivo.</p>
+                <h3 class="service-title">Social Media</h3>
+                <p class="service-description">Aumenta la visibilidad de tu marca y fortalece la relación con tus clientes en redes sociales.</p>
             </div>
             <div class="service">
-                <h3>Creación de Logos</h3>
-                <p>Diseño de logos únicos y profesionales que representen la identidad de tu marca.</p>
+                <h3 class="service-title">Posicionamiento Web</h3>
+                <p class="service-description">Optimiza tu sitio web para aparecer en los primeros resultados de búsqueda y atraer más tráfico orgánico.</p>
             </div>
         </section>
         <section id="contacto">
@@ -85,5 +106,14 @@
             <a href="mailto:tuemail@example.com" class="cta-button">Contactar</a>
         </section>
     </div>
+    <script>
+        // Script para hacer los títulos de servicio desplegables
+        document.querySelectorAll('.service-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const description = title.nextElementSibling;
+                description.style.display = description.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
