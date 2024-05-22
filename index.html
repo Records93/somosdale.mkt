@@ -2,12 +2,13 @@
 <html lang="es"
 <head>
     <img src=DALEMKT1.png alt=DALEMKT1.png>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Integrales para Negocios Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trend+Sans+One&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,9 +26,16 @@
             text-align: center;
             padding: 20px;
         }
-        h1 {
+        h1, h2 {
+            font-family: 'Trend Sans One', sans-serif; /* Fuente actualizada */
             margin: 0;
-            font-size: 2.5em;
+        }
+        h1 {
+            font-size: 3em; /* Tamaño de fuente actualizado */
+        }
+        h2 {
+            font-size: 1.5em; /* Tamaño de fuente actualizado */
+            margin-top: 10px;
         }
         nav {
             margin: 20px 0;
@@ -53,7 +61,6 @@
             font-family: Helvetica, Arial, sans-serif; /* Fuente actualizada */
         }
         .service-description {
-            display: none;
             margin-bottom: 10px;
         }
         .cta-button {
@@ -72,13 +79,15 @@
             margin-top: 50px;
         }
         .service-column {
-            flex-basis: 23%; /* Ajustar el ancho de las columnas según sea necesario */
+            flex-basis: 30%; /* Ajustar el ancho de las columnas según sea necesario */
+            text-align: left;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Servicios Integrales para Negocios Online</h1>
+        <h1>SOMOS DALE</h1>
+        <h2>Soluciones Integrales para Empresas</h2>
         <nav>
             <a href="#servicios">Servicios</a>
             <a href="#contacto">Contacto</a>
@@ -87,17 +96,31 @@
     <div class="container">
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
-            <div class="service">
-                <h3 class="service-title">Branding</h3>
-                <p class="service-description">Mejora la percepción de tu marca y destaca frente a la competencia.</p>
-            </div>
-            <div class="service">
-                <h3 class="service-title">Social Media</h3>
-                <p class="service-description">Aumenta la visibilidad de tu marca y fortalece la relación con tus clientes en redes sociales.</p>
-            </div>
-            <div class="service">
-                <h3 class="service-title">Posicionamiento Web</h3>
-                <p class="service-description">Optimiza tu sitio web para aparecer en los primeros resultados de búsqueda y atraer más tráfico orgánico.</p>
+            <div class="services-container">
+                <div class="service-column">
+                    <div class="service">
+                        <h3 class="service-title">Branding</h3>
+                        <p class="service-description">Descripción del servicio de Branding.</p>
+                    </div>
+                </div>
+                <div class="service-column">
+                    <div class="service">
+                        <h3 class="service-title">Social Media</h3>
+                        <p class="service-description">Descripción del servicio de Social Media.</p>
+                    </div>
+                </div>
+                <div class="service-column">
+                    <div class="service">
+                        <h3 class="service-title">Posicionamiento Web</h3>
+                        <p class="service-description">Descripción del servicio de Posicionamiento Web.</p>
+                    </div>
+                </div>
+                <div class="service-column">
+                    <div class="service">
+                        <h3 class="service-title">Servicio 4</h3>
+                        <p class="service-description">Descripción del servicio 4.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contacto">
@@ -117,3 +140,4 @@
     </script>
 </body>
 </html>
+
